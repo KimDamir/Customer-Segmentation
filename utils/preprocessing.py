@@ -30,8 +30,8 @@ def encode_and_scale(df):
     # Scaling numerical features
     scaler = StandardScaler()
     df[['Income', 'Customer_Since', 'Total_Children', 'MntWines', 'MntFruits', 'MntMeatProducts', 
-        'MntFishProducts', 'MntSweetProducts', 'MntGoldProds']] = scaler.fit_transform(
+        'MntFishProducts', 'MntSweetProducts', 'MntGoldProds', 'Year_Birth', 'Recency']] = scaler.fit_transform(
         df[['Income', 'Customer_Since', 'Total_Children', 'MntWines', 'MntFruits', 'MntMeatProducts', 
-            'MntFishProducts', 'MntSweetProducts', 'MntGoldProds']])
+            'MntFishProducts', 'MntSweetProducts', 'MntGoldProds', 'Year_Birth', 'Recency']])
 
     return df
